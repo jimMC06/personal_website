@@ -1,3 +1,5 @@
+import ChoiceCard from "./ChoiceCard";
+
 export default function Hero() {
   return (
     <section className="mx-auto flex min-h-[80vh] max-w-5xl flex-col justify-center px-8">
@@ -12,28 +14,25 @@ export default function Hero() {
       <p className="mt-6 max-w-2xl text-lg text-gray-300">
         Welcome to my little website. Hope you enjoy your stay! Feel free to look through all my projects.
       </p>
-
-      <div className="mt-8 flex gap-4">
-        <a
-          href="#projects"
-          className="rounded-full bg-white px-6 py-3 font-medium text-black"
-        >
+      <div className="mt-8 flex flex-wrap gap-4">
+        <ChoiceCard href="#projects">
           View Projects
-        </a>
-
-        <a
-          href="#about"
-          className="rounded-full border border-white/30 px-6 py-3 font-medium"
+        </ChoiceCard>
+          
+        <ChoiceCard
+        href="#about"
+        variant="main"
         >
           About Me
-        </a>
-        <a
+        </ChoiceCard>
+        
+        <ChoiceCard
         href="#fun"
-        className="rounded-full bg-white px-6 py-3 font-medium text-black"
+        variant="main"
         >
           Fun
-        </a>
-      </div>
+          </ChoiceCard>
+</div>
     </section>
   );
 }
