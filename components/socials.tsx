@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Socials(){
     return(
-        <div className="mt-10 flex gap-6">
+        <div className="mt-10 flex justify-center gap-6">
             <a
             href="https://github.com/jimMC06"
             target="_blank"
